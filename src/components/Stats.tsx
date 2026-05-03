@@ -1,13 +1,19 @@
-const stats = [
-  { value: "86+", label: "Apps available" },
-  { value: "105+", label: "System tweaks" },
-  { value: "12", label: "Categories" },
-  { value: "6", label: "Accent colors" },
-  { value: "2", label: "Package managers" },
-  { value: "Portable", label: "Single .exe" },
-];
+"use client";
+
+import { useLanguage } from "@/i18n";
 
 export default function Stats() {
+  const { t } = useLanguage();
+
+  const stats = [
+    { value: "86+", label: t.stats.appsAvailable },
+    { value: "105+", label: t.stats.systemTweaks },
+    { value: "12", label: t.stats.categories },
+    { value: "6", label: t.stats.accentColors },
+    { value: "2", label: t.stats.packageManagers },
+    { value: t.stats.singleExe, label: "" },
+  ];
+
   return (
     <section className="border-y border-border bg-bg-card/50 py-16">
       <div className="mx-auto max-w-6xl px-6">

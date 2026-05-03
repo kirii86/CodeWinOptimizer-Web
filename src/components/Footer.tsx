@@ -1,4 +1,10 @@
+"use client";
+
+import { useLanguage } from "@/i18n";
+
 export default function Footer() {
+  const { t } = useLanguage();
+
   return (
     <footer className="border-t border-border">
       <div className="mx-auto max-w-7xl px-6 py-12">
@@ -32,7 +38,7 @@ export default function Footer() {
           </div>
 
           <p className="text-xs text-text-muted">
-            &copy; {new Date().getFullYear()} OscarDev. Open source, free forever.
+            &copy; {new Date().getFullYear()} {t.footer.website}
           </p>
         </div>
       </div>

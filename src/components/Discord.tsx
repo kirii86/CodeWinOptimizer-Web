@@ -1,4 +1,10 @@
+"use client";
+
+import { useLanguage } from "@/i18n";
+
 export default function Discord() {
+  const { t } = useLanguage();
+
   return (
     <section className="py-16">
       <div className="mx-auto max-w-7xl px-6">
@@ -10,9 +16,9 @@ export default function Discord() {
               </svg>
             </div>
             <div className="flex-1">
-              <h3 className="text-lg font-semibold">Join KiriHub on Discord</h3>
+              <h3 className="text-lg font-semibold">{t.discord.heading}</h3>
               <p className="mt-1 text-sm text-text-muted">
-                Get help, share feedback, and stay up to date.
+                {t.discord.subheading}
               </p>
             </div>
             <a
@@ -21,7 +27,7 @@ export default function Discord() {
               rel="noopener noreferrer"
               className="inline-flex shrink-0 items-center gap-2 rounded-full bg-neon px-5 py-2.5 text-sm font-semibold text-bg-dark transition-all hover:bg-neon-dim hover:scale-[1.02]"
             >
-              Join KiriHub
+              {t.discord.button}
             </a>
           </div>
         </div>
