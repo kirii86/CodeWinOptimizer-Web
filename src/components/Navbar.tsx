@@ -53,13 +53,27 @@ export default function Navbar() {
 
           <button
             onClick={setLocale}
-            className="flex items-center gap-1.5 rounded-full border border-border px-3 py-1.5 text-xs font-medium text-text-muted transition-all hover:border-neon/40 hover:text-white"
+            className="relative flex items-center h-7 w-14 rounded-full border border-border bg-bg-card transition-all hover:border-neon/40"
           >
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <circle cx="12" cy="12" r="10" />
-              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10M12 2a15.3 15.3 0 0 0-4 10 15.3 15.3 0 0 0 4 10" />
-            </svg>
-            {locale === "en" ? "ES" : "EN"}
+            <span
+              className={`absolute text-[10px] font-semibold transition-all duration-200 ${
+                locale === "en" ? "left-2 text-neon" : "right-2 text-neon"
+              }`}
+            >
+              {locale === "en" ? "EN" : "ES"}
+            </span>
+            <span
+              className={`absolute text-[10px] font-semibold transition-all duration-200 text-text-muted ${
+                locale === "en" ? "right-2" : "left-2"
+              }`}
+            >
+              {locale === "en" ? "ES" : "EN"}
+            </span>
+            <span
+              className={`absolute h-5 w-5 rounded-full bg-neon transition-all duration-200 ${
+                locale === "en" ? "left-1" : "left-[calc(100%-1.5rem)]"
+              }`}
+            />
           </button>
 
           <button
