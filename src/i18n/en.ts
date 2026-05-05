@@ -104,7 +104,7 @@ const en = {
     orBuild: " or build it yourself.",
   },
   footer: {
-    website: "OscarDev. Open source, free forever.",
+    website: "OscarDev",
   },
   lang: "English",
 };

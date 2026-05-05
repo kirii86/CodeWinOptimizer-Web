@@ -107,7 +107,7 @@ const es = {
     orBuild: " o compílalo tú mismo.",
   },
   footer: {
-    website: "OscarDev. Código abierto, gratis para siempre.",
+    website: "OscarDev",
   },
   lang: "Español",
 };
