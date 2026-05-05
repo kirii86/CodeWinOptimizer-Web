@@ -6,9 +6,9 @@ export default function Stats() {
   const { t } = useLanguage();
 
   const stats = [
-    { value: "86+", label: t.stats.appsAvailable },
-    { value: "105+", label: t.stats.systemTweaks },
-    { value: "12", label: t.stats.categories },
+    { value: "171", label: t.stats.appsAvailable },
+    { value: "140+", label: t.stats.systemTweaks },
+    { value: "14", label: t.stats.categories },
     { value: "6", label: t.stats.accentColors },
     { value: "2", label: t.stats.packageManagers },
     { value: t.stats.singleExe, label: "" },

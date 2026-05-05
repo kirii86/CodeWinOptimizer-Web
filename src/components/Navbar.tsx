@@ -12,7 +12,7 @@ export default function Navbar() {
     { label: t.nav.features, href: "#features" },
     { label: t.nav.preview, href: "#preview" },
     { label: t.nav.techStack, href: "#tech" },
-    { label: t.nav.docs, href: "https://github.com/kirii86/CodeWinOptimizer" },
+    { label: t.nav.docs, href: "/docs" },
   ];
 
   return (

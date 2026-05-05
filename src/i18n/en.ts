@@ -30,12 +30,12 @@ const en = {
       {
         title: "App Manager",
         description:
-          "86+ apps across 7 categories. Install/Uninstall via WinGet or Chocolatey. Detects already installed apps with green badges. Website links and per-category select-all.",
+          "171 apps across 7 categories. Install/Uninstall via WinGet or Chocolatey. Detects already installed apps with green badges. Website links and per-category select-all.",
       },
       {
-        title: "105+ System Tweaks",
+        title: "140+ System Tweaks",
         description:
-          "Comprehensive tweaks across 12 categories: network, memory, GPU, privacy, performance, firewall, latency timers, UI & bloat removal. Toggle switches for each.",
+          "Comprehensive tweaks across 14 categories: network, memory, GPU, privacy, performance, essential (safe), advanced (caution), firewall, latency timers, UI & bloat removal. Toggle switches for each.",
       },
       {
         title: "Windows Features",

@@ -30,12 +30,12 @@ const es = {
       {
         title: "Gestor de apps",
         description:
-          "Más de 86 apps en 7 categorías. Instalar/Desinstalar vía WinGet o Chocolatey. Detecta apps ya instaladas con badges verdes. Enlaces web y seleccionar todo por categoría.",
+          "171 apps en 7 categorías. Instalar/Desinstalar vía WinGet o Chocolatey. Detecta apps ya instaladas con badges verdes. Enlaces web y seleccionar todo por categoría.",
       },
       {
-        title: "Más de 105 ajustes",
+        title: "Más de 140 ajustes",
         description:
-          "Ajustes completos en 12 categorías: red, memoria, GPU, privacidad, rendimiento, firewall, temporizadores de latencia, UI y eliminación de bloat. Interruptores para cada uno.",
+          "Ajustes completos en 14 categorías: red, memoria, GPU, privacidad, rendimiento, esenciales (seguros), avanzados (precaución), firewall, temporizadores de latencia, UI y eliminación de bloat. Interruptores para cada uno.",
       },
       {
         title: "Características de Windows",
