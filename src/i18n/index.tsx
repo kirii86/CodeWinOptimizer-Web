@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useState, type ReactNode } from "react";
+import { createContext, useContext, useState, useEffect, type ReactNode } from "react";
 import en from "./en";
 import es from "./es";
 
@@ -23,10 +23,29 @@ const LanguageContext = createContext<LanguageContextType>({
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const [locale, setLocale] = useState<Locale>("en");
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    const saved = localStorage.getItem("cwo-locale");
+    if (saved === "es") setLocale("es");
+    setMounted(true);
+  }, []);
 
   const toggleLocale = () => {
-    setLocale((prev) => (prev === "en" ? "es" : "en"));
+    setLocale((prev) => {
+      const next = prev === "en" ? "es" : "en";
+      localStorage.setItem("cwo-locale", next);
+      return next;
+    });
   };
+
+  if (!mounted) {
+    return (
+      <LanguageContext.Provider value={{ locale: "en", t: en, setLocale: () => {} }}>
+        {children}
+      </LanguageContext.Provider>
+    );
+  }
 
   return (
     <LanguageContext.Provider

@@ -5,6 +5,7 @@ const en = {
     techStack: "Tech Stack",
     docs: "Docs",
     starOnGitHub: "Star on GitHub",
+    download: "Download",
   },
   hero: {
     badge: "Open Source · Portable · Free",
@@ -66,7 +67,7 @@ const en = {
     heading1: "See it",
     heading2: "in action.",
     subheading: "A dark-themed, modern interface designed for power users.",
-    labels: ["Restore", "Apps", "Tweaks", "Features", "Appearance"],
+    labels: ["Restore", "Apps", "Tweaks", "Features", "Monitor", "Cleanup", "Appearance"],
   },
   discord: {
     heading: "Join KiriHub on Discord",

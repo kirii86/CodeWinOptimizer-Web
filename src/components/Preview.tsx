@@ -3,11 +3,13 @@
 import { useLanguage } from "@/i18n";
 
 const sources = [
-  "https://i.imgur.com/1ZVIUVs.png",
-  "https://i.imgur.com/rJqpplf.png",
-  "https://i.imgur.com/dGvBRuB.png",
-  "https://i.imgur.com/CIAySy3.png",
-  "https://i.imgur.com/exoZMYs.png",
+  "https://i.imgur.com/REsj7bQ.png",
+  "https://i.imgur.com/kMnT9aW.png",
+  "https://i.imgur.com/57wnMc5.png",
+  "https://i.imgur.com/blgf8FT.png",
+  "https://i.imgur.com/qMgfBqe.png",
+  "https://i.imgur.com/jgOlF4j.png",
+  "https://i.imgur.com/SQ8IbOl.png",
 ];
 
 const alts = [
@@ -15,6 +17,8 @@ const alts = [
   "App Manager",
   "System Tweaks",
   "Windows Features",
+  "System Monitor",
+  "Disk Cleanup",
   "Appearance Settings",
 ];
 
@@ -34,11 +38,11 @@ export default function Preview() {
           </p>
         </div>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="flex flex-wrap justify-center gap-6">
           {sources.map((src, i) => (
             <div
               key={t.preview.labels[i]}
-              className="group relative overflow-hidden rounded-2xl border border-border bg-bg-card transition-all hover:border-neon/30"
+              className="group relative overflow-hidden rounded-2xl border border-border bg-bg-card transition-all hover:border-neon/30 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
             >
               <div className="aspect-[16/10] relative overflow-hidden">
                 {/* eslint-disable-next-line @next/next/no-img-element */}

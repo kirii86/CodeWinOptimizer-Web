@@ -5,6 +5,7 @@ const es = {
     techStack: "Tecnología",
     docs: "Docs",
     starOnGitHub: "Estrella en GitHub",
+    download: "Descargar",
   },
   hero: {
     badge: "Código abierto · Portable · Gratis",
@@ -66,7 +67,7 @@ const es = {
     heading1: "Míralo",
     heading2: "en acción.",
     subheading: "Una interfaz moderna con tema oscuro diseñada para power users.",
-    labels: ["Restauración", "Apps", "Ajustes", "Características", "Apariencia"],
+    labels: ["Restauración", "Apps", "Ajustes", "Características", "Monitor", "Limpieza", "Apariencia"],
   },
   discord: {
     heading: "Únete a KiriHub en Discord",
