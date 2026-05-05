@@ -1,4 +1,14 @@
+import type { Metadata } from "next";
 import DocSidebar from "@/components/DocSidebar";
+
+export const metadata: Metadata = {
+  title: {
+    template: "%s | CodeWinOptimizer Docs",
+    default: "Documentation — CodeWinOptimizer",
+  },
+  description:
+    "Complete documentation for CodeWinOptimizer — system tweaks, Windows features, cleanup tasks, profiles, and restore & backup.",
+};
 
 export default function DocsLayout({ children }: { children: React.ReactNode }) {
   return (
