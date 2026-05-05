@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import DocSidebar from "@/components/DocSidebar";
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: {
@@ -12,9 +13,12 @@ export const metadata: Metadata = {
 
 export default function DocsLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="flex min-h-screen pt-16">
-      <DocSidebar />
-      <main className="flex-1 px-8 py-10 max-w-4xl">{children}</main>
-    </div>
+    <>
+      <Navbar />
+      <div className="flex min-h-screen pt-16">
+        <DocSidebar />
+        <main className="flex-1 px-8 py-10 max-w-4xl mx-auto">{children}</main>
+      </div>
+    </>
   );
 }
