@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useLanguage } from "@/i18n";
@@ -21,10 +22,7 @@ export default function DocSidebar() {
     <aside className="w-56 shrink-0 border-r border-border">
       <nav className="sticky top-16 p-6">
         <a href="/docs" className="flex items-center gap-2 mb-6 group">
-          <svg className="cwo-logo" viewBox="0 0 64 64" width="28" height="28">
-            <rect x="3" y="3" width="58" height="58" rx="14" fill="var(--color-bg-card)" stroke="var(--color-neon)" strokeWidth="2.5" />
-            <text x="32" y="41" textAnchor="middle" fontFamily="'Segoe UI',Arial,sans-serif" fontSize="22" fontWeight="900" fill="var(--color-neon)" letterSpacing="1">CWO</text>
-          </svg>
+          <Image src="/logo.png" alt="WinOptimizer" width={56} height={56} className="rounded-full" />
           <span className="text-sm font-semibold">
             Code<span className="text-neon">Win</span>Optimizer
           </span>

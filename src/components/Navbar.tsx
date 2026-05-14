@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { useLanguage } from "@/i18n";
@@ -16,10 +17,7 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-bg-dark/80 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <Link href="/" className="flex items-center gap-3">
-          <svg width="28" height="28" viewBox="0 0 64 64">
-            <rect x="3" y="3" width="58" height="58" rx="14" fill="#0a0a0a" stroke="#39ff14" strokeWidth="2.5"/>
-            <text x="32" y="41" textAnchor="middle" fontFamily="'Segoe UI',Arial,sans-serif" fontSize="22" fontWeight="900" fill="#d4ff00" letterSpacing="1">CWO</text>
-          </svg>
+          <Image src="/logo.png" alt="WinOptimizer" width={64} height={64} className="rounded-full" />
           <span className="text-lg font-semibold tracking-tight">
             Code<span className="text-neon">Win</span>Optimizer
           </span>
