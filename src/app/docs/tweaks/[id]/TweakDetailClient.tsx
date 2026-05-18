@@ -1,6 +1,7 @@
 "use client";
 
 import { useLanguage } from "@/i18n";
+import Link from "next/link";
 
 type TweakEntry = {
   id: string;
@@ -58,12 +59,12 @@ export default function TweakDetailClient({ tweak, category }: Props) {
   return (
     <div>
       <div className="mb-8">
-        <a
+        <Link
           href="/docs/tweaks"
           className="text-xs text-text-muted hover:text-neon transition-colors"
         >
           &larr; <span className="hover:underline">{l.back}</span>
-        </a>
+        </Link>
         <p className="text-xs text-text-muted mt-1">
           {category.name[locale as "en" | "es"]}
         </p>

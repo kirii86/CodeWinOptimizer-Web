@@ -20,7 +20,7 @@ export default function Footer() {
 
           <div className="flex items-center gap-6 text-sm text-text-muted">
             <a
-              href="https://github.com/kirii86/CodeWinOptimizer"
+              href="https://github.com/oscarcodedev/CodeWinOptimizer-App"
               target="_blank"
               rel="noopener noreferrer"
               className="transition-colors hover:text-white"
@@ -28,7 +28,7 @@ export default function Footer() {
               GitHub
             </a>
             <a
-              href="https://github.com/kirii86/CodeWinOptimizer/blob/main/LICENSE"
+              href="https://github.com/oscarcodedev/CodeWinOptimizer-App/blob/main/LICENSE"
               target="_blank"
               rel="noopener noreferrer"
               className="transition-colors hover:text-white"

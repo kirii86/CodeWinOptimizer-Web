@@ -22,13 +22,15 @@ const LanguageContext = createContext<LanguageContextType>({
 });
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [locale, setLocale] = useState<Locale>("en");
+  const [locale, setLocale] = useState<Locale>(() => {
+    if (typeof window === "undefined") return "en";
+    return localStorage.getItem("cwo-locale") === "es" ? "es" : "en";
+  });
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    const saved = localStorage.getItem("cwo-locale");
-    if (saved === "es") setLocale("es");
-    setMounted(true);
+    const id = window.setTimeout(() => setMounted(true), 0);
+    return () => window.clearTimeout(id);
   }, []);
 
   const toggleLocale = () => {

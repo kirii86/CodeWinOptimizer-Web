@@ -28,7 +28,7 @@ export default function Hero() {
 
         <div className="animate-fade-up animate-fade-up-delay-3 mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
           <a
-            href="https://github.com/kirii86/CodeWinOptimizer/releases/download/v1.0.0/CodeWinOptimizer.exe"
+            href="https://github.com/oscarcodedev/CodeWinOptimizer-App/releases/latest"
             className="inline-flex items-center gap-2 rounded-full bg-neon px-8 py-3.5 text-sm font-semibold text-bg-dark transition-all hover:bg-neon-dim hover:scale-[1.02] glow"
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
@@ -37,7 +37,7 @@ export default function Hero() {
             {t.hero.download}
           </a>
           <a
-            href="https://github.com/kirii86/CodeWinOptimizer"
+            href="https://github.com/oscarcodedev/CodeWinOptimizer-App"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full border border-border px-8 py-3.5 text-sm font-medium text-white transition-all hover:border-neon/40 hover:bg-bg-card"

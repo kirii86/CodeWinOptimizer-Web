@@ -61,7 +61,7 @@ export default function TechStack() {
                 <strong className="text-yellow-400">{t.tech.antivirusNotice}</strong>
                 {t.tech.antivirusText}
                 <a
-                  href="https://github.com/kirii86/CodeWinOptimizer"
+                  href="https://github.com/oscarcodedev/CodeWinOptimizer-App"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-neon underline"
