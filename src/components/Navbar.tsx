@@ -15,9 +15,9 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-bg-dark/80 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2">
         <Link href="/" className="flex items-center gap-3">
-          <Image src="/logo.png" alt="WinOptimizer" width={64} height={64} className="rounded-full" />
+          <Image src="/logo.png" alt="WinOptimizer" width={40} height={40} className="rounded-full" />
           <span className="text-lg font-semibold tracking-tight">
             Code<span className="text-neon">Win</span>Optimizer
           </span>

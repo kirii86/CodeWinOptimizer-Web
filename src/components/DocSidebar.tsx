@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useLanguage } from "@/i18n";
@@ -20,13 +19,7 @@ export default function DocSidebar() {
 
   return (
     <aside className="w-56 shrink-0 border-r border-border">
-      <nav className="sticky top-16 p-6">
-        <a href="/docs" className="flex items-center gap-2 mb-6 group">
-          <Image src="/logo.png" alt="WinOptimizer" width={56} height={56} className="rounded-full" />
-          <span className="text-sm font-semibold">
-            Code<span className="text-neon">Win</span>Optimizer
-          </span>
-        </a>
+      <nav className="sticky top-14 p-6">
         <h2 className="mb-4 text-xs font-semibold uppercase tracking-wider text-text-muted">
           {locale === "en" ? "Documentation" : "Documentación"}
         </h2>
