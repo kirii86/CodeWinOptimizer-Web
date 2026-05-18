@@ -30,6 +30,10 @@ const impactColors: Record<string, string> = {
   low: "text-neon bg-neon/10 border-neon/20",
 };
 
+function stripEmoji(text: string): string {
+  return text.replace(/^[\p{Emoji_Presentation}\p{Extended_Pictographic}‍️]+\s*/u, "");
+}
+
 const labels = {
   en: {
     back: "All Tweaks",
@@ -61,12 +65,12 @@ export default function TweakDetailClient({ tweak, category }: Props) {
           &larr; <span className="hover:underline">{l.back}</span>
         </a>
         <p className="text-xs text-text-muted mt-1">
-          {category.icon} {category.name[locale as "en" | "es"]}
+          {category.name[locale as "en" | "es"]}
         </p>
       </div>
 
       <h1 className="text-2xl font-bold tracking-tight mb-2">
-        {tweak.name[locale as "en" | "es"]}
+        {stripEmoji(tweak.name[locale as "en" | "es"])}
       </h1>
       <p className="text-sm text-text-muted mb-6 leading-relaxed">
         {tweak.description[locale as "en" | "es"]}
@@ -120,7 +124,9 @@ export default function TweakDetailClient({ tweak, category }: Props) {
                   key={i}
                   className="flex items-start gap-2 text-sm text-red-300/80 rounded-lg border border-red-400/10 bg-red-400/5 p-3"
                 >
-                  <span className="mt-0.5 shrink-0">&nbsp;⚠&nbsp;</span>
+                  <svg className="mt-0.5 shrink-0" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#F87171" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" /><line x1="12" y1="9" x2="12" y2="13" /><line x1="12" y1="17" x2="12.01" y2="17" />
+                  </svg>
                   <span>{w}</span>
                 </li>
               ))}

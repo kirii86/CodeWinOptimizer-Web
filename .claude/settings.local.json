@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(npm run dev)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "PowerShell(git checkout fd574df)",
+      "Bash(GIT_EDITOR=\"pwsh -NoProfile -File fix-msg.ps1\" git commit --amend)",
+      "Bash(git branch *)",
+      "Bash(git checkout *)",
+      "Bash(Get-ChildItem -Recurse -Include \"*.svg\" -ErrorAction SilentlyContinue)",
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "Bash(git push *)"
+    ]
+  }
+}
