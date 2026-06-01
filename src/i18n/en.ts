@@ -15,7 +15,7 @@ const en = {
       "A local-first Windows optimization tool that puts you in charge. System restore, app management, registry tweaks, performance tuning — all from a single, portable executable.",
     download: "Download for Windows",
     viewOnGitHub: "View on GitHub",
-    subtitle: "Windows 10/11 · Single .exe · No installation required · Run as Administrator",
+    subtitle: "Windows 10/11 · Single .exe with bundled O&O ShutUp10++ · No installation required · Auto-elevates to Administrator",
   },
   features: {
     heading1: "Everything you need to",
@@ -26,32 +26,32 @@ const en = {
       {
         title: "System Restore",
         description:
-          "Create system restore points with custom names. Bypasses the Windows 24h cooldown via registry tweak. Full registry backup to .reg files across all 5 hives.",
+          "Create system restore points with custom names. Bypasses the Windows 24h cooldown via registry tweak. Full registry backup to .reg files across all 5 hives. Driver backup & restore.",
       },
       {
         title: "App Manager",
         description:
-          "171 apps across 7 categories. Install/Uninstall via WinGet or Chocolatey. Detects already installed apps with green badges. Website links and per-category select-all.",
+          "181 apps across 8 categories including Microsoft Tools (.NET SDK 6/8/9/10, Sysinternals suite, PowerShell 7, PowerToys). Install/Uninstall via WinGet or Chocolatey with a dynamic button that switches based on installation state. Sticky search header that stays visible while scrolling.",
       },
       {
         title: "140+ System Tweaks",
         description:
-          "Comprehensive tweaks across 14 categories: network, memory, GPU, privacy, performance, essential (safe), advanced (caution), firewall, latency timers, UI & bloat removal. Toggle switches for each.",
+          "Comprehensive tweaks across 14 categories: network, memory, GPU, privacy, performance, essential, advanced, firewall, Nagle, latency timers, UI & bloat removal. Robust execution via PowerShell cmdlets (Get/Disable-WindowsOptionalFeature, NetFirewallRule, CIM) — no more brittle wmic/netsh. Sticky toolbar with global Select All, per-category X/Y progress badges, and one-click ShutUp10++ launcher.",
       },
       {
         title: "Windows Features",
         description:
-          "Enable/disable .NET Framework, Hyper-V, WSL, Sandbox, NFS, F8 Boot Recovery, and more. Quick fixes: network reset, NTP sync, SFC/DISM scan, Windows Update reset.",
+          "Enable/disable .NET Framework, Hyper-V, WSL, Sandbox, NFS, F8 Boot Recovery, and more. Quick fixes: network reset, NTP sync, SFC/DISM scan, Windows Update reset. State-checked features that skip cleanly when absent and never hang on Windows Update payload downloads.",
       },
       {
         title: "System Monitor",
         description:
-          "Real-time dashboard with 3-second auto-refresh. CPU usage, RAM gauge, GPU temp/VRAM via nvidia-smi, per-drive usage bars, system temperatures, and uptime tracking.",
+          "3x2 dashboard with auto-refresh. Inline SVG icons (chip, RAM, GPU, disk, clock, globe). CPU & GPU usage with temperature next to the percentage. Per-drive usage bars, uptime + boot time, color-coded network latency rows per host. PC Health Score (0-100, A+ to F) with granular thresholds for RAM, CPU, disk free GB + % used, and GPU/CPU temp.",
       },
       {
-        title: "Appearance & Terminal",
+        title: "Side-Docked Terminal",
         description:
-          "6 accent colors (Neon Green, Cyan, Purple, Orange, Pink, Yellow) and 6 fonts. Real-time command output terminal with copy and clear. Persistent via localStorage.",
+          "Real-time command output docked to the right side, drag-resizable from 280px to 70% width with the width persisted in localStorage. Collapsible to a 36px vertical strip. Copy & clear actions. 6 accent colors + 6 fonts, persisted via localStorage. Bundled O&O ShutUp10++ for one-click privacy hardening.",
       },
     ],
   },

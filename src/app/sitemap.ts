@@ -9,8 +9,10 @@ type TweakCategory = {
 const staticRoutes = [
   "",
   "/docs",
+  "/docs/apps",
   "/docs/tweaks",
   "/docs/features",
+  "/docs/monitor",
   "/docs/cleanup",
   "/docs/profiles",
   "/docs/restore",

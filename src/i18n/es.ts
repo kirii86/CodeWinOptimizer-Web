@@ -15,7 +15,7 @@ const es = {
       "Una herramienta de optimización local-first que te da el control. Restauración del sistema, gestión de apps, ajustes del registro, tuning de rendimiento — todo desde un único ejecutable portable.",
     download: "Descargar para Windows",
     viewOnGitHub: "Ver en GitHub",
-    subtitle: "Windows 10/11 · Solo un .exe · Sin instalación · Ejecutar como Administrador",
+    subtitle: "Windows 10/11 · Un solo .exe con O&O ShutUp10++ embebido · Sin instalación · Auto-elevación a Administrador",
   },
   features: {
     heading1: "Todo lo que necesitas para",
@@ -26,32 +26,32 @@ const es = {
       {
         title: "Restauración del sistema",
         description:
-          "Crea puntos de restauración con nombres personalizados. Omite el bloqueo de 24h de Windows mediante ajuste del registro. Backup completo del registro a archivos .reg de los 5 hives.",
+          "Crea puntos de restauración con nombres personalizados. Omite el bloqueo de 24h de Windows mediante ajuste del registro. Backup completo del registro a archivos .reg de los 5 hives. Backup y restauración de drivers.",
       },
       {
         title: "Gestor de apps",
         description:
-          "171 apps en 7 categorías. Instalar/Desinstalar vía WinGet o Chocolatey. Detecta apps ya instaladas con badges verdes. Enlaces web y seleccionar todo por categoría.",
+          "181 apps en 8 categorías incluyendo Microsoft Tools (.NET SDK 6/8/9/10, suite Sysinternals, PowerShell 7, PowerToys). Instalar/Desinstalar vía WinGet o Chocolatey con un botón dinámico que cambia según el estado de instalación. Cabecera con buscador sticky que permanece visible al hacer scroll.",
       },
       {
         title: "Más de 140 ajustes",
         description:
-          "Ajustes completos en 14 categorías: red, memoria, GPU, privacidad, rendimiento, esenciales (seguros), avanzados (precaución), firewall, temporizadores de latencia, UI y eliminación de bloat. Interruptores para cada uno.",
+          "Ajustes completos en 14 categorías: red, memoria, GPU, privacidad, rendimiento, esenciales, avanzados, firewall, Nagle, temporizadores de latencia, UI y eliminación de bloat. Ejecución robusta vía cmdlets de PowerShell (Get/Disable-WindowsOptionalFeature, NetFirewallRule, CIM) — sin más wmic/netsh frágiles. Toolbar sticky con Seleccionar Todo global, badges X/Y de progreso por categoría, y lanzador de ShutUp10++ con un click.",
       },
       {
         title: "Características de Windows",
         description:
-          "Activar/desactivar .NET Framework, Hyper-V, WSL, Sandbox, NFS, recuperación F8 y más. Correcciones rápidas: reinicio de red, sincronización NTP, escaneo SFC/DISM, reinicio de Windows Update.",
+          "Activar/desactivar .NET Framework, Hyper-V, WSL, Sandbox, NFS, recuperación F8 y más. Correcciones rápidas: reinicio de red, sincronización NTP, escaneo SFC/DISM, reinicio de Windows Update. Features con verificación de estado que omiten limpiamente cuando no están y nunca se quedan colgadas esperando descargas de Windows Update.",
       },
       {
         title: "Monitor del sistema",
         description:
-          "Panel en tiempo real con actualización cada 3 segundos. Uso de CPU, barra de RAM, temperatura/VRAM de GPU vía nvidia-smi, barras de uso por disco, temperaturas del sistema y tiempo de actividad.",
+          "Dashboard 3x2 con auto-refresh. Iconos SVG inline (chip, RAM, GPU, disco, reloj, globo). Uso de CPU y GPU con temperatura junto al porcentaje. Barras de uso por disco, uptime + hora de arranque, filas de latencia de red por host con color según ms. Salud del PC (0-100, A+ a F) con umbrales granulares para RAM, CPU, espacio libre + % usado en disco, y temp de GPU/CPU.",
       },
       {
-        title: "Apariencia y Terminal",
+        title: "Terminal lateral",
         description:
-          "6 colores de acento (Verde neón, Cyan, Púrpura, Naranja, Rosa, Amarillo) y 6 fuentes. Terminal con salida de comandos en tiempo real, copiar y limpiar. Persistente en localStorage.",
+          "Salida de comandos en tiempo real anclada a la derecha, redimensionable arrastrando de 280px a 70% del ancho con la anchura persistida en localStorage. Colapsable a una franja vertical de 36px. Acciones de copiar y limpiar. 6 colores de acento + 6 fuentes, persistido en localStorage. O&O ShutUp10++ embebido para endurecimiento de privacidad con un click.",
       },
     ],
   },

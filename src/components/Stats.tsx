@@ -6,7 +6,7 @@ export default function Stats() {
   const { t } = useLanguage();
 
   const stats = [
-    { value: "171", label: t.stats.appsAvailable },
+    { value: "181", label: t.stats.appsAvailable },
     { value: "140+", label: t.stats.systemTweaks },
     { value: "14", label: t.stats.categories },
     { value: "6", label: t.stats.accentColors },

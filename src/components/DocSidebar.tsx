@@ -6,8 +6,10 @@ import { useLanguage } from "@/i18n";
 
 const sections = [
   { href: "/docs", label: { en: "Overview", es: "General" } },
+  { href: "/docs/apps", label: { en: "App Manager", es: "Gestor de Apps" } },
   { href: "/docs/tweaks", label: { en: "System Tweaks", es: "Ajustes del Sistema" } },
   { href: "/docs/features", label: { en: "Windows Features", es: "Características" } },
+  { href: "/docs/monitor", label: { en: "System Monitor", es: "Monitor del sistema" } },
   { href: "/docs/cleanup", label: { en: "Disk Cleanup", es: "Limpieza de Disco" } },
   { href: "/docs/profiles", label: { en: "Tweak Profiles", es: "Perfiles de Tweaks" } },
   { href: "/docs/restore", label: { en: "Restore & Backup", es: "Restauración y Backup" } },

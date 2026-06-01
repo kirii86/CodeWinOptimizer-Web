@@ -55,6 +55,21 @@ const IconProfiles = () => (
   </svg>
 );
 
+const IconApps = () => (
+  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#60A5FA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="3" y="3" width="7" height="7" rx="1" />
+    <rect x="14" y="3" width="7" height="7" rx="1" />
+    <rect x="3" y="14" width="7" height="7" rx="1" />
+    <rect x="14" y="14" width="7" height="7" rx="1" />
+  </svg>
+);
+
+const IconMonitor = () => (
+  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#34D399" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+  </svg>
+);
+
 type Section = {
   href: string;
   title: string;
@@ -67,9 +82,11 @@ const content: Record<string, { title: string; subtitle: string; sections: Secti
     title: "Documentation",
     subtitle: "Everything you need to know about CodeWinOptimizer — from system tweaks to driver backups. Click any section below to dive in.",
     sections: [
-      { href: "/docs/tweaks", title: "System Tweaks", icon: <IconTweaks />, desc: "140+ tweaks across 14 categories — network, memory, GPU, privacy, performance, essential, advanced. Each tweak documented with commands, warnings, and impact level." },
-      { href: "/docs/features", title: "Windows Features & Quick Fixes", icon: <IconFeatures />, desc: "Enable/disable Hyper-V, WSL, Sandbox, .NET Framework, and more. Quick fixes for network reset, NTP sync, SFC/DISM scan, and Windows Update." },
-      { href: "/docs/cleanup", title: "Disk Cleanup", icon: <IconCleanup />, desc: "7 cleanup tasks: temp files, recycle bin, prefetch, Windows Update cache, thumbnails, DNS cache, memory dumps. Each documented with what it removes." },
+      { href: "/docs/apps", title: "App Manager", icon: <IconApps />, desc: "181 apps across 8 categories including the new Microsoft Tools section (.NET SDK 6/8/9/10, Sysinternals, PowerShell 7, PowerToys). Install/Uninstall via WinGet or Chocolatey with a dynamic action button. Sticky search header." },
+      { href: "/docs/tweaks", title: "System Tweaks", icon: <IconTweaks />, desc: "140+ tweaks across 14 categories — network, memory, GPU, privacy, performance, essential, advanced. All commands now use modern PowerShell cmdlets (NetFirewallRule, CIM, *-WindowsOptionalFeature) instead of deprecated wmic/netsh. Each tweak documented with commands, warnings, and impact level." },
+      { href: "/docs/monitor", title: "System Monitor", icon: <IconMonitor />, desc: "Real-time PC Health Score (0-100, A+ to F), 3×2 hardware cards with inline temperature, per-host network latency badges, DNS selector and full Speedtest.net integration." },
+      { href: "/docs/features", title: "Windows Features & Quick Fixes", icon: <IconFeatures />, desc: "Enable/disable Hyper-V, WSL, Sandbox, .NET Framework, and more. Quick fixes for network reset, NTP sync, SFC/DISM scan, and Windows Update. State-checked so already-disabled features skip cleanly without hanging on payload downloads." },
+      { href: "/docs/cleanup", title: "Disk Cleanup", icon: <IconCleanup />, desc: "7 cleanup tasks: temp files, recycle bin, prefetch, Windows Update cache, thumbnails, DNS cache, memory dumps. Each documented with what it removes. Handles empty/locked directories gracefully without spurious errors." },
       { href: "/docs/profiles", title: "Tweak Profiles", icon: <IconProfiles />, desc: "Save and load tweak configurations as named profiles. 3 default profiles included: Standard, Gaming, Minimal. Learn how to create custom profiles." },
       { href: "/docs/restore", title: "Restore & Backup", icon: <IconRestore />, desc: "System restore points, full registry backup (5 hives), and driver backup/restore. Learn how each feature works and when to use them." },
     ],
@@ -78,9 +95,11 @@ const content: Record<string, { title: string; subtitle: string; sections: Secti
     title: "Documentación",
     subtitle: "Todo lo que necesitas saber sobre CodeWinOptimizer — desde ajustes del sistema hasta copias de seguridad de drivers. Haz clic en cualquier sección para explorar.",
     sections: [
-      { href: "/docs/tweaks", title: "Ajustes del Sistema", icon: <IconTweaks />, desc: "Más de 140 ajustes en 14 categorías — red, memoria, GPU, privacidad, rendimiento, esenciales, avanzados. Cada ajuste documentado con comandos, advertencias y nivel de impacto." },
-      { href: "/docs/features", title: "Características de Windows", icon: <IconFeatures />, desc: "Activar/desactivar Hyper-V, WSL, Sandbox, .NET Framework y más. Correcciones rápidas para reinicio de red, sincronización NTP, escaneo SFC/DISM y Windows Update." },
-      { href: "/docs/cleanup", title: "Limpieza de Disco", icon: <IconCleanup />, desc: "7 tareas de limpieza: archivos temporales, papelera, prefetch, caché de Windows Update, miniaturas, caché DNS, volcados de memoria." },
+      { href: "/docs/apps", title: "Gestor de Apps", icon: <IconApps />, desc: "181 apps en 8 categorías incluyendo la nueva sección Microsoft Tools (.NET SDK 6/8/9/10, Sysinternals, PowerShell 7, PowerToys). Instalar/Desinstalar vía WinGet o Chocolatey con botón dinámico. Cabecera con buscador sticky." },
+      { href: "/docs/tweaks", title: "Ajustes del Sistema", icon: <IconTweaks />, desc: "Más de 140 ajustes en 14 categorías — red, memoria, GPU, privacidad, rendimiento, esenciales, avanzados. Todos los comandos ahora usan cmdlets modernas de PowerShell (NetFirewallRule, CIM, *-WindowsOptionalFeature) en lugar de wmic/netsh obsoletos. Cada ajuste documentado con comandos, advertencias y nivel de impacto." },
+      { href: "/docs/monitor", title: "Monitor del sistema", icon: <IconMonitor />, desc: "Salud del PC en tiempo real (0-100, A+ a F), tarjetas de hardware 3×2 con temperatura inline, badges de latencia de red por host, selector DNS y test completo de Speedtest.net." },
+      { href: "/docs/features", title: "Características de Windows", icon: <IconFeatures />, desc: "Activar/desactivar Hyper-V, WSL, Sandbox, .NET Framework y más. Correcciones rápidas para reinicio de red, sincronización NTP, escaneo SFC/DISM y Windows Update. Verificación de estado para que features ya deshabilitadas se omitan limpiamente sin quedarse colgadas en descargas." },
+      { href: "/docs/cleanup", title: "Limpieza de Disco", icon: <IconCleanup />, desc: "7 tareas de limpieza: archivos temporales, papelera, prefetch, caché de Windows Update, miniaturas, caché DNS, volcados de memoria. Maneja directorios vacíos/bloqueados sin errores espurios." },
       { href: "/docs/profiles", title: "Perfiles de Tweaks", icon: <IconProfiles />, desc: "Guarda y carga configuraciones de tweaks como perfiles con nombre. 3 perfiles incluidos: Standard, Gaming, Minimal. Aprende a crear perfiles personalizados." },
       { href: "/docs/restore", title: "Restauración y Backup", icon: <IconRestore />, desc: "Puntos de restauración del sistema, copia completa del registro (5 hives) y backup/restauración de drivers. Aprende cómo funciona cada función." },
     ],
