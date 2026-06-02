@@ -1,9 +1,23 @@
 "use client";
 
+import { useState } from "react";
 import { useLanguage } from "@/i18n";
+
+const INSTALL_COMMAND = 'irm "https://codewinoptimizer.com/win" | iex';
 
 export default function Hero() {
   const { t } = useLanguage();
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(INSTALL_COMMAND);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      // clipboard API not available; silently ignore
+    }
+  };
 
   return (
     <section className="relative overflow-hidden pt-32 pb-20 md:pt-48 md:pb-32">
@@ -26,9 +40,42 @@ export default function Hero() {
           {t.hero.description}
         </p>
 
-        <div className="animate-fade-up animate-fade-up-delay-3 mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+        <div className="animate-fade-up animate-fade-up-delay-3 mx-auto mt-10 max-w-2xl">
+          <div className="mb-2 flex items-center justify-center gap-2 text-xs uppercase tracking-wider text-text-muted">
+            <span className="h-px w-6 bg-border" />
+            {t.hero.install.label}
+            <span className="h-px w-6 bg-border" />
+          </div>
+          <div className="group relative flex items-center gap-3 rounded-xl border border-neon/30 bg-bg-card/60 p-3 pl-5 backdrop-blur transition-all hover:border-neon/60 hover:bg-bg-card/80">
+            <span className="select-none text-neon font-mono">$</span>
+            <code className="flex-1 overflow-x-auto whitespace-nowrap font-mono text-sm text-white md:text-base">
+              {INSTALL_COMMAND}
+            </code>
+            <button
+              type="button"
+              onClick={handleCopy}
+              aria-label={copied ? t.hero.install.copied : t.hero.install.copy}
+              className="inline-flex shrink-0 items-center gap-1.5 rounded-lg border border-border bg-bg-dark/60 px-3 py-1.5 text-xs font-semibold text-white transition-all hover:border-neon/40 hover:bg-neon/10 hover:text-neon"
+            >
+              {copied ? (
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
+              ) : (
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                </svg>
+              )}
+              {copied ? t.hero.install.copied : t.hero.install.copy}
+            </button>
+          </div>
+          <p className="mt-2 text-center text-xs text-text-muted">{t.hero.install.hint}</p>
+        </div>
+
+        <div className="animate-fade-up animate-fade-up-delay-3 mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
           <a
-            href="https://github.com/oscarcodedev/CodeWinOptimizer-App/releases/latest"
+            href="https://github.com/oscarxdev/CodeWinOptimizer-App/releases/latest"
             className="inline-flex items-center gap-2 rounded-full bg-neon px-8 py-3.5 text-sm font-semibold text-bg-dark transition-all hover:bg-neon-dim hover:scale-[1.02] glow"
           >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
@@ -37,7 +84,7 @@ export default function Hero() {
             {t.hero.download}
           </a>
           <a
-            href="https://github.com/oscarcodedev/CodeWinOptimizer-App"
+            href="https://github.com/oscarxdev/CodeWinOptimizer-App"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full border border-border px-8 py-3.5 text-sm font-medium text-white transition-all hover:border-neon/40 hover:bg-bg-card"

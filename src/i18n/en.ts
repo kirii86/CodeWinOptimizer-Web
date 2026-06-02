@@ -16,6 +16,12 @@ const en = {
     download: "Download for Windows",
     viewOnGitHub: "View on GitHub",
     subtitle: "Windows 10/11 · Single .exe with bundled O&O ShutUp10++ · No installation required · Auto-elevates to Administrator",
+    install: {
+      label: "Install in one line (PowerShell admin)",
+      copy: "Copy",
+      copied: "Copied!",
+      hint: "No downloads. Always the latest version.",
+    },
   },
   features: {
     heading1: "Everything you need to",

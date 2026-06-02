@@ -4,14 +4,14 @@
 
 # CodeWinOptimizer Web
 
-Official website and documentation for [CodeWinOptimizer](https://github.com/oscarcodedev/CodeWinOptimizer-App), a portable Windows application focused on optimization, maintenance, and system tweaks.
+Official website and documentation for [CodeWinOptimizer](https://github.com/oscarxdev/CodeWinOptimizer-App), a portable Windows application focused on optimization, maintenance, and system tweaks.
 
 This repository contains the public website for the application, including project information, feature details, previews, technical notes, and documentation to help users download and use CodeWinOptimizer safely.
 
 ## Application
 
-- Main repository: [oscarcodedev/CodeWinOptimizer-App](https://github.com/oscarcodedev/CodeWinOptimizer-App)
-- Downloads: [GitHub Releases](https://github.com/oscarcodedev/CodeWinOptimizer-App/releases)
+- Main repository: [oscarxdev/CodeWinOptimizer-App](https://github.com/oscarxdev/CodeWinOptimizer-App)
+- Downloads: [GitHub Releases](https://github.com/oscarxdev/CodeWinOptimizer-App/releases)
 - Platform: Windows 10/11
 - Format: portable `.exe`
 - Installation: no installation required
@@ -33,7 +33,7 @@ Main features:
 
 ## Download The Application
 
-1. Open the [CodeWinOptimizer releases page](https://github.com/oscarcodedev/CodeWinOptimizer-App/releases).
+1. Open the [CodeWinOptimizer releases page](https://github.com/oscarxdev/CodeWinOptimizer-App/releases).
 2. Download the `.exe` file from the latest available release.
 3. Save the executable in a trusted local folder.
 4. Run `CodeWinOptimizer.exe` as Administrator.
@@ -54,7 +54,7 @@ To build the application from the main repository:
 - Wails v2.
 - Node.js/pnpm if required by the application frontend.
 
-See [CodeWinOptimizer-App](https://github.com/oscarcodedev/CodeWinOptimizer-App) for technical build and development instructions for the application itself.
+See [CodeWinOptimizer-App](https://github.com/oscarxdev/CodeWinOptimizer-App) for technical build and development instructions for the application itself.
 
 ## Recommended Use
 
@@ -120,4 +120,4 @@ pnpm lint
 
 ## License
 
-See the main application repository, [CodeWinOptimizer-App](https://github.com/oscarcodedev/CodeWinOptimizer-App), for license information.
+See the main application repository, [CodeWinOptimizer-App](https://github.com/oscarxdev/CodeWinOptimizer-App), for license information.

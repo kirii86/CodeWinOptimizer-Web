@@ -1,14 +1,16 @@
-# CodeWinOptimizer launcher
-# Usage: irm "https://codewinoptimizer.com/win" | iex
+# CodeWinOptimizer launcher (DEV channel)
+# Usage: irm "https://codewinoptimizer.com/win-dev" | iex
+# Downloads the latest release whose tag contains "dev" or "alpha", or any pre-release.
 
 $ErrorActionPreference = 'Stop'
 
-$repo = 'oscarxdev/CodeWinOptimizer-App'
-$dest = Join-Path $env:TEMP 'CodeWinOptimizer.exe'
-$api  = "https://api.github.com/repos/$repo/releases/latest"
+$repo    = 'oscarxdev/CodeWinOptimizer-App'
+$channel = 'dev'
+$dest    = Join-Path $env:TEMP "CodeWinOptimizer-$channel.exe"
+$api     = "https://api.github.com/repos/$repo/releases?per_page=30"
 
 Write-Host ''
-Write-Host '  CodeWinOptimizer' -ForegroundColor Cyan
+Write-Host "  CodeWinOptimizer ($channel)" -ForegroundColor Yellow
 Write-Host '  https://codewinoptimizer.com' -ForegroundColor DarkGray
 Write-Host ''
 
@@ -33,19 +35,24 @@ function Get-ExpectedHash {
 }
 
 try {
-    Write-Host '> Resolviendo ultima version...' -ForegroundColor DarkCyan
+    Write-Host "> Buscando ultima release $channel..." -ForegroundColor DarkYellow
     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-    $release = Invoke-RestMethod -Uri $api -Headers @{ 'User-Agent' = 'CodeWinOptimizer-Installer' }
-    $asset = $release.assets | Where-Object { $_.name -like '*.exe' } | Select-Object -First 1
-    if (-not $asset) { throw 'No se encontro un .exe en la ultima release.' }
+    $releases = Invoke-RestMethod -Uri $api -Headers @{ 'User-Agent' = 'CodeWinOptimizer-Installer' }
+    $release = $releases | Where-Object {
+        $_.prerelease -eq $true -or $_.tag_name -like '*dev*' -or $_.tag_name -like '*alpha*'
+    } | Select-Object -First 1
+    if (-not $release) { throw 'No hay pre-releases publicadas. Usa el canal estable: irm https://codewinoptimizer.com/win | iex' }
 
-    Write-Host "> Version: $($release.tag_name)" -ForegroundColor DarkCyan
-    Write-Host "> Descargando $($asset.name)..." -ForegroundColor DarkCyan
+    $asset = $release.assets | Where-Object { $_.name -like '*.exe' } | Select-Object -First 1
+    if (-not $asset) { throw 'La release no contiene un .exe.' }
+
+    Write-Host "> Version: $($release.tag_name)" -ForegroundColor DarkYellow
+    Write-Host "> Descargando $($asset.name)..." -ForegroundColor DarkYellow
     Invoke-WebRequest -Uri $asset.browser_download_url -OutFile $dest -UseBasicParsing
 
     $expected = Get-ExpectedHash -Release $release -AssetName $asset.name
     if ($expected) {
-        Write-Host '> Verificando SHA256...' -ForegroundColor DarkCyan
+        Write-Host '> Verificando SHA256...' -ForegroundColor DarkYellow
         $actual = (Get-FileHash -Path $dest -Algorithm SHA256).Hash.ToLowerInvariant()
         if ($actual -ne $expected) {
             Remove-Item $dest -Force -ErrorAction SilentlyContinue
@@ -63,8 +70,8 @@ try {
 catch {
     Write-Host ''
     Write-Host "ERROR: $($_.Exception.Message)" -ForegroundColor Red
-    Write-Host 'Si el problema persiste, descarga manualmente desde:' -ForegroundColor Yellow
-    Write-Host "  https://github.com/$repo/releases/latest" -ForegroundColor Yellow
+    Write-Host 'Descarga manual:' -ForegroundColor Yellow
+    Write-Host "  https://github.com/$repo/releases" -ForegroundColor Yellow
     Write-Host ''
     exit 1
 }

@@ -5,11 +5,11 @@ export const siteConfig = {
     "Download CodeWinOptimizer, a free open-source Windows optimizer with restore points, app management, cleanup, registry tweaks, performance tuning, and quick repair tools.",
   url:
     process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
-    "https://codewinoptimizer.oscarcodedev.com",
+    "https://codewinoptimizer.com",
   logo: "/logo.png",
-  repository: "https://github.com/oscarcodedev/CodeWinOptimizer-App",
-  releases: "https://github.com/oscarcodedev/CodeWinOptimizer-App/releases",
-  author: "OscarCodeDev",
+  repository: "https://github.com/oscarxdev/CodeWinOptimizer-App",
+  releases: "https://github.com/oscarxdev/CodeWinOptimizer-App/releases",
+  author: "OscarDev",
   keywords: [
     "CodeWinOptimizer",
     "Windows optimizer",

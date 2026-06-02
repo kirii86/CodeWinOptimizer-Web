@@ -71,7 +71,7 @@ export default function Navbar() {
               ))}
             </div>
             <a
-              href="https://github.com/oscarcodedev/CodeWinOptimizer-App"
+              href="https://github.com/oscarxdev/CodeWinOptimizer-App"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 rounded-full border border-border px-4 py-2 text-sm text-text-muted transition-all hover:border-neon hover:text-white"
@@ -82,7 +82,7 @@ export default function Navbar() {
               {t.nav.starOnGitHub}
             </a>
             <a
-              href="https://github.com/oscarcodedev/CodeWinOptimizer-App/releases/latest"
+              href="https://github.com/oscarxdev/CodeWinOptimizer-App/releases/latest"
               className="flex items-center gap-2 rounded-full bg-neon px-4 py-2 text-sm font-semibold text-bg-dark transition-all hover:bg-neon-dim"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -157,7 +157,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="https://github.com/oscarcodedev/CodeWinOptimizer-App"
+            href="https://github.com/oscarxdev/CodeWinOptimizer-App"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-2 flex items-center gap-2 py-2 text-sm text-text-muted hover:text-white"
@@ -168,7 +168,7 @@ export default function Navbar() {
             {t.nav.starOnGitHub}
           </a>
           <a
-            href="https://github.com/oscarcodedev/CodeWinOptimizer-App/releases/latest"
+            href="https://github.com/oscarxdev/CodeWinOptimizer-App/releases/latest"
             className="mt-2 flex items-center gap-2 py-2 text-sm text-neon hover:text-neon-dim"
           >
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
