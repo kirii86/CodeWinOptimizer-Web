@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { useLanguage } from "@/i18n";
+import ScrollProgress from "./ScrollProgress";
 
 const supportLinks = [
   {
@@ -178,6 +179,7 @@ export default function Navbar() {
           </a>
         </div>
       )}
+      <ScrollProgress />
     </nav>
   );
 }

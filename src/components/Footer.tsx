@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useLanguage } from "@/i18n";
 
 export default function Footer() {
@@ -10,9 +11,13 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-12">
         <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between">
           <div className="flex items-center gap-3">
-            <span className="h-7 w-7 rounded-lg bg-neon flex items-center justify-center text-bg-dark font-bold text-xs">
-              CW
-            </span>
+            <Image
+              src="/logo.png"
+              alt="CodeWinOptimizer"
+              width={32}
+              height={32}
+              className="rounded-full"
+            />
             <span className="text-sm font-medium">
               Code<span className="text-neon">Win</span>Optimizer
             </span>
