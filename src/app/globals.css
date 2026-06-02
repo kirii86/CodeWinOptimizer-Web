@@ -46,3 +46,33 @@ body {
 .animate-fade-up-delay-2 { animation-delay: 0.2s; opacity: 0; }
 .animate-fade-up-delay-3 { animation-delay: 0.3s; opacity: 0; }
 .animate-fade-up-delay-4 { animation-delay: 0.4s; opacity: 0; }
+
+/* Scrollbar — neon accent matching the header progress bar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #d4ff00 #0a0a0a;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4ff00;
+  border-radius: 8px;
+  border: 2px solid #0a0a0a;
+  box-shadow: 0 0 8px rgba(212, 255, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b8e000;
+}
+
+::-webkit-scrollbar-corner {
+  background: #0a0a0a;
+}
