@@ -3,13 +3,14 @@
 import { useLanguage } from "@/i18n";
 
 const sources = [
-  "https://i.imgur.com/REsj7bQ.png",
-  "https://i.imgur.com/kMnT9aW.png",
-  "https://i.imgur.com/57wnMc5.png",
-  "https://i.imgur.com/blgf8FT.png",
-  "https://i.imgur.com/qMgfBqe.png",
-  "https://i.imgur.com/jgOlF4j.png",
-  "https://i.imgur.com/SQ8IbOl.png",
+  "/preview/1.png",
+  "/preview/2.png",
+  "/preview/3.png",
+  "/preview/4.png",
+  "/preview/5.png",
+  "/preview/6.png",
+  "/preview/7.png",
+  "/preview/8.png",
 ];
 
 const alts = [
@@ -19,7 +20,8 @@ const alts = [
   "Windows Features",
   "System Monitor",
   "Disk Cleanup",
-  "Appearance Settings",
+  "Windows Updates",
+  "Settings",
 ];
 
 export default function Preview() {

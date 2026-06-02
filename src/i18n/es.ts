@@ -73,7 +73,7 @@ const es = {
     heading1: "Míralo",
     heading2: "en acción.",
     subheading: "Una interfaz moderna con tema oscuro diseñada para power users.",
-    labels: ["Restauración", "Apps", "Ajustes", "Características", "Monitor", "Limpieza", "Apariencia"],
+    labels: ["Restauración", "Apps", "Ajustes", "Características", "Monitor", "Limpieza", "Actualizaciones", "Configuración"],
   },
   discord: {
     heading: "Únete a KiriHub en Discord",

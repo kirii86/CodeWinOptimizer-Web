@@ -73,7 +73,7 @@ const en = {
     heading1: "See it",
     heading2: "in action.",
     subheading: "A dark-themed, modern interface designed for power users.",
-    labels: ["Restore", "Apps", "Tweaks", "Features", "Monitor", "Cleanup", "Appearance"],
+    labels: ["Restore", "Apps", "Tweaks", "Features", "Monitor", "Cleanup", "Updates", "Settings"],
   },
   discord: {
     heading: "Join KiriHub on Discord",
