@@ -50,9 +50,14 @@ const es = {
           "Activar/desactivar .NET Framework, Hyper-V, WSL, Sandbox, NFS, recuperación F8 y más. Correcciones rápidas: reinicio de red, sincronización NTP, escaneo SFC/DISM, reinicio de Windows Update. Features con verificación de estado que omiten limpiamente cuando no están y nunca se quedan colgadas esperando descargas de Windows Update.",
       },
       {
+        title: "Gestor de inicio",
+        description:
+          "Visibilidad y control total sobre cada entrada de auto-arranque de Windows en una pestaña. Lista las claves Run (HKLM, HKCU, WOW6432Node), carpetas Inicio (usuario + todos los usuarios), tareas AppX UWP (Claude, Terminal, WhatsApp, Xbox, etc.) y tareas programadas con triggers Logon/Boot. El toggle por entrada usa el mismo valor binario StartupApproved que escribe el Administrador de tareas — totalmente reversible. Búsqueda, filtro (todos/on/off), iconos por tipo y conteos en vivo.",
+      },
+      {
         title: "Monitor del sistema",
         description:
-          "Dashboard 3x2 con auto-refresh. Iconos SVG inline (chip, RAM, GPU, disco, reloj, globo). Uso de CPU y GPU con temperatura junto al porcentaje. Barras de uso por disco, uptime + hora de arranque, filas de latencia de red por host con color según ms. Salud del PC (0-100, A+ a F) con umbrales granulares para RAM, CPU, espacio libre + % usado en disco, y temp de GPU/CPU.",
+          "Panel Impacto arriba: snapshots persistidos (historial rolling en %LOCALAPPDATA%) con tarjetas delta-first para Disco libre, Programas de inicio, Servicios activos y Procesos — codificados por color frente a la visita anterior. Más el dashboard en tiempo real 3x2: uso de CPU y GPU con temperatura, barras de uso por disco, uptime, latencia de red y un Salud del PC (0-100, A+ a F).",
       },
       {
         title: "Terminal lateral",
@@ -73,7 +78,7 @@ const es = {
     heading1: "Míralo",
     heading2: "en acción.",
     subheading: "Una interfaz moderna con tema oscuro diseñada para power users.",
-    labels: ["Restauración", "Apps", "Ajustes", "Características", "Monitor", "Limpieza", "Actualizaciones", "Configuración"],
+    labels: ["Restauración", "Apps", "Ajustes", "Características", "Monitor", "Limpieza", "Actualizaciones", "Configuración", "Inicio"],
   },
   discord: {
     heading: "Únete a KiriHub en Discord",

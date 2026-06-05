@@ -14,6 +14,7 @@ const sources = [
   "/preview/6.png",
   "/preview/7.png",
   "/preview/8.png",
+  "/preview/9.png",
 ];
 
 const alts = [
@@ -25,6 +26,7 @@ const alts = [
   "Disk Cleanup",
   "Windows Updates",
   "Settings",
+  "Startup Manager",
 ];
 
 export default function Preview() {

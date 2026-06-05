@@ -50,9 +50,14 @@ const en = {
           "Enable/disable .NET Framework, Hyper-V, WSL, Sandbox, NFS, F8 Boot Recovery, and more. Quick fixes: network reset, NTP sync, SFC/DISM scan, Windows Update reset. State-checked features that skip cleanly when absent and never hang on Windows Update payload downloads.",
       },
       {
+        title: "Startup Manager",
+        description:
+          "Full visibility and control over every Windows auto-start entry in one tab. Lists Run keys (HKLM, HKCU, WOW6432Node), Startup folders (user + all-users), AppX UWP startup tasks (Claude, Terminal, WhatsApp, Xbox, etc.) and scheduled tasks with Logon/Boot triggers. Per-item toggle uses the same StartupApproved binary that Task Manager writes — fully reversible. Search, filter (all/on/off), per-row type icons, live counts.",
+      },
+      {
         title: "System Monitor",
         description:
-          "3x2 dashboard with auto-refresh. Inline SVG icons (chip, RAM, GPU, disk, clock, globe). CPU & GPU usage with temperature next to the percentage. Per-drive usage bars, uptime + boot time, color-coded network latency rows per host. PC Health Score (0-100, A+ to F) with granular thresholds for RAM, CPU, disk free GB + % used, and GPU/CPU temp.",
+          "Impact Dashboard at the top: persisted snapshots (rolling history in %LOCALAPPDATA%) with delta-first metric cards for Disk Free, Startup Programs, Running Services and Processes — color-coded vs the previous visit. Plus the real-time 3x2 dashboard: CPU & GPU usage with temperature, per-drive usage bars, uptime, network latency, and a PC Health Score (0-100, A+ to F).",
       },
       {
         title: "Side-Docked Terminal",
@@ -73,7 +78,7 @@ const en = {
     heading1: "See it",
     heading2: "in action.",
     subheading: "A dark-themed, modern interface designed for power users.",
-    labels: ["Restore", "Apps", "Tweaks", "Features", "Monitor", "Cleanup", "Updates", "Settings"],
+    labels: ["Restore", "Apps", "Tweaks", "Features", "Monitor", "Cleanup", "Updates", "Settings", "Startup"],
   },
   discord: {
     heading: "Join KiriHub on Discord",

@@ -12,6 +12,7 @@ const staticRoutes = [
   "/docs/apps",
   "/docs/tweaks",
   "/docs/features",
+  "/docs/startup",
   "/docs/monitor",
   "/docs/cleanup",
   "/docs/profiles",

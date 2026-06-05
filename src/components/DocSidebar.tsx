@@ -9,6 +9,7 @@ const sections = [
   { href: "/docs/apps", label: { en: "App Manager", es: "Gestor de Apps" } },
   { href: "/docs/tweaks", label: { en: "System Tweaks", es: "Ajustes del Sistema" } },
   { href: "/docs/features", label: { en: "Windows Features", es: "Características" } },
+  { href: "/docs/startup", label: { en: "Startup Manager", es: "Gestor de Inicio" } },
   { href: "/docs/monitor", label: { en: "System Monitor", es: "Monitor del sistema" } },
   { href: "/docs/cleanup", label: { en: "Disk Cleanup", es: "Limpieza de Disco" } },
   { href: "/docs/profiles", label: { en: "Tweak Profiles", es: "Perfiles de Tweaks" } },
