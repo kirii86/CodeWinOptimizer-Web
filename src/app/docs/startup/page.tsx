@@ -22,7 +22,7 @@ const content = {
       },
       {
         name: "AppX UWP startup tasks",
-        desc: "Modern Microsoft Store and UWP apps that declare a startup extension in their manifest — Claude, Windows Terminal, WhatsApp, Xbox Game Bar, etc. Detection parses every installed package's AppxManifest.xml for any <Extension Category=\"windows.startupTask\"> in any namespace (uap5, desktop, …).",
+        desc: "Modern Microsoft Store and UWP apps that declare a startup extension in their manifest — Discord, Windows Terminal, WhatsApp, Xbox Game Bar, etc. Detection parses every installed package's AppxManifest.xml for any <Extension Category=\"windows.startupTask\"> in any namespace (uap5, desktop, …).",
         path: "AppxManifest.xml of every installed package; default enable state from the manifest's Enabled attribute, override from HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\StartupApproved\\StartupTask\\<PackageFamilyName>\\<TaskId>",
       },
       {
@@ -57,7 +57,7 @@ const content = {
       },
       {
         name: "Tareas de inicio AppX (UWP)",
-        desc: "Apps modernas de Microsoft Store y UWP que declaran una extensión de inicio en su manifiesto — Claude, Windows Terminal, WhatsApp, Xbox Game Bar, etc. La detección parsea el AppxManifest.xml de cada paquete instalado buscando <Extension Category=\"windows.startupTask\"> en cualquier namespace (uap5, desktop, …).",
+        desc: "Apps modernas de Microsoft Store y UWP que declaran una extensión de inicio en su manifiesto — Discord, Windows Terminal, WhatsApp, Xbox Game Bar, etc. La detección parsea el AppxManifest.xml de cada paquete instalado buscando <Extension Category=\"windows.startupTask\"> en cualquier namespace (uap5, desktop, …).",
         path: "AppxManifest.xml de cada paquete instalado; estado por defecto del atributo Enabled del manifiesto, override desde HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\StartupApproved\\StartupTask\\<PackageFamilyName>\\<TaskId>",
       },
       {

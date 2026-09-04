@@ -52,7 +52,7 @@ const es = {
       {
         title: "Gestor de inicio",
         description:
-          "Visibilidad y control total sobre cada entrada de auto-arranque de Windows en una pestaña. Lista las claves Run (HKLM, HKCU, WOW6432Node), carpetas Inicio (usuario + todos los usuarios), tareas AppX UWP (Claude, Terminal, WhatsApp, Xbox, etc.) y tareas programadas con triggers Logon/Boot. El toggle por entrada usa el mismo valor binario StartupApproved que escribe el Administrador de tareas — totalmente reversible. Búsqueda, filtro (todos/on/off), iconos por tipo y conteos en vivo.",
+          "Visibilidad y control total sobre cada entrada de auto-arranque de Windows en una pestaña. Lista las claves Run (HKLM, HKCU, WOW6432Node), carpetas Inicio (usuario + todos los usuarios), tareas AppX UWP (Discord, Terminal, WhatsApp, Xbox, etc.) y tareas programadas con triggers Logon/Boot. El toggle por entrada usa el mismo valor binario StartupApproved que escribe el Administrador de tareas — totalmente reversible. Búsqueda, filtro (todos/on/off), iconos por tipo y conteos en vivo.",
       },
       {
         title: "Monitor del sistema",

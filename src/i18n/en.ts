@@ -52,7 +52,7 @@ const en = {
       {
         title: "Startup Manager",
         description:
-          "Full visibility and control over every Windows auto-start entry in one tab. Lists Run keys (HKLM, HKCU, WOW6432Node), Startup folders (user + all-users), AppX UWP startup tasks (Claude, Terminal, WhatsApp, Xbox, etc.) and scheduled tasks with Logon/Boot triggers. Per-item toggle uses the same StartupApproved binary that Task Manager writes — fully reversible. Search, filter (all/on/off), per-row type icons, live counts.",
+          "Full visibility and control over every Windows auto-start entry in one tab. Lists Run keys (HKLM, HKCU, WOW6432Node), Startup folders (user + all-users), AppX UWP startup tasks (Discord, Terminal, WhatsApp, Xbox, etc.) and scheduled tasks with Logon/Boot triggers. Per-item toggle uses the same StartupApproved binary that Task Manager writes — fully reversible. Search, filter (all/on/off), per-row type icons, live counts.",
       },
       {
         title: "System Monitor",
