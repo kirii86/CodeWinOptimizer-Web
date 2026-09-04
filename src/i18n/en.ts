@@ -114,6 +114,36 @@ const en = {
     reviewSource: "review the source",
     orBuild: " or build it yourself.",
   },
+  faq: {
+    heading1: "Frequently asked",
+    heading2: "questions.",
+    items: [
+      {
+        q: "What is CodeWinOptimizer and what does it do?",
+        a: "CodeWinOptimizer is a free, open-source Windows optimizer and debloater for Windows 10 and 11. From a single portable .exe you can install or uninstall 181 apps via WinGet or Chocolatey, apply 140+ registry, privacy and performance tweaks, enable or disable Windows features, manage startup programs, clean junk files, monitor your PC with a health score, and create system restore points before any change.",
+      },
+      {
+        q: "Is CodeWinOptimizer a WinUtil alternative?",
+        a: "Yes. CodeWinOptimizer covers the same use cases as WinUtil — install apps, apply Windows tweaks, remove bloatware, fix Windows and manage updates — but as a portable Windows application with a modern GUI instead of a PowerShell script. It adds extras WinUtil does not include, like a reversible startup manager, a system monitor with a PC Health Score (0-100), disk cleanup and driver backup.",
+      },
+      {
+        q: "Is CodeWinOptimizer free and open source?",
+        a: "Yes. CodeWinOptimizer is 100% free and open source on GitHub. There are no subscriptions, no trial limits, no accounts and no paid \"pro\" features. Everything the optimizer does is visible in the code, and it runs entirely on your machine.",
+      },
+      {
+        q: "Is it safe? Does CodeWinOptimizer contain telemetry or ads?",
+        a: "CodeWinOptimizer is local-first: it contains no telemetry, no analytics and no ads, and it never phones home. Every tweak shows the exact PowerShell or registry command before you apply it, changes are reversible, and the app recommends creating a system restore point and a full 5-hive registry backup first.",
+      },
+      {
+        q: "Will CodeWinOptimizer speed up Windows or improve gaming performance?",
+        a: "It targets exactly the things that slow Windows down: bloatware and preinstalled apps, telemetry and background services, startup programs, and network latency (Nagle, latency timers, TCP/IP). Presets like the Gaming profile disable resource-hungry features and prioritize foreground performance. Results depend on your hardware, but most users notice faster boot times and lower background CPU, RAM and disk usage.",
+      },
+      {
+        q: "Which Windows versions are supported?",
+        a: "Windows 10 and Windows 11 (64-bit) with the WebView2 runtime. The tool needs no installation: download the .exe from GitHub Releases, run it as Administrator, create a restore point, and you can use it from a USB drive on any machine.",
+      },
+    ],
+  },
   footer: {
     website: "OscarDev",
   },

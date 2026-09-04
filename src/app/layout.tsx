@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Providers from "./Providers";
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   keywords: siteConfig.keywords,
-  authors: [{ name: siteConfig.author }],
+  authors: [{ name: siteConfig.author, url: siteConfig.repository }],
   creator: siteConfig.author,
   publisher: siteConfig.author,
   category: "Software",
@@ -49,28 +49,33 @@ export const metadata: Metadata = {
     ],
     apple: siteConfig.logo,
   },
+  manifest: "/manifest.webmanifest",
+  appleWebApp: {
+    capable: true,
+    title: siteConfig.name,
+    statusBarStyle: "black-translucent",
+  },
   openGraph: {
-    title: siteConfig.title,
-    description: siteConfig.description,
+    type: "website",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    images: [
-      {
-        url: siteConfig.logo,
-        width: 1024,
-        height: 1024,
-        alt: "CodeWinOptimizer logo",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-  twitter: {
-    card: "summary",
     title: siteConfig.title,
     description: siteConfig.description,
-    images: [siteConfig.logo],
+    locale: "en_US",
+    alternateLocale: ["es_ES"],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.title,
+    description: siteConfig.description,
+    creator: siteConfig.twitterHandle,
+  },
+  verification: {},
+};
+
+export const viewport: Viewport = {
+  themeColor: "#0b1220",
+  colorScheme: "dark",
 };
 
 const structuredData = [
@@ -82,26 +87,50 @@ const structuredData = [
     operatingSystem: "Windows 10, Windows 11",
     description: siteConfig.description,
     url: siteConfig.url,
-    image: absoluteUrl(siteConfig.logo),
+    image: [absoluteUrl(siteConfig.logo), absoluteUrl("/preview/1.png")],
+    screenshot: [
+      absoluteUrl("/preview/1.png"),
+      absoluteUrl("/preview/2.png"),
+      absoluteUrl("/preview/3.png"),
+    ],
     downloadUrl: siteConfig.releases,
+    installUrl: absoluteUrl("/win"),
     softwareHelp: absoluteUrl("/docs"),
     codeRepository: siteConfig.repository,
+    featureList: siteConfig.features,
+    keywords: siteConfig.keywords.slice(0, 30).join(", "),
+    isAccessibleForFree: true,
     offers: {
       "@type": "Offer",
       price: "0",
       priceCurrency: "USD",
+      category: "Free",
     },
     author: {
       "@type": "Person",
       name: siteConfig.author,
+      url: siteConfig.repository,
     },
   },
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: `${siteConfig.name} Web`,
+    name: siteConfig.name,
+    alternateName: "CodeWinOptimizer - Windows Optimizer",
     url: siteConfig.url,
     description: siteConfig.description,
+    inLanguage: "en",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: siteConfig.name,
+    url: siteConfig.url,
+    logo: absoluteUrl(siteConfig.logo),
+    sameAs: [
+      siteConfig.repository,
+      "https://discord.albionbattlehub.com/",
+    ],
   },
 ];
 

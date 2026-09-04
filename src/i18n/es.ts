@@ -117,6 +117,36 @@ const es = {
     reviewSource: "revisa el código",
     orBuild: " o compílalo tú mismo.",
   },
+  faq: {
+    heading1: "Preguntas",
+    heading2: "frecuentes.",
+    items: [
+      {
+        q: "¿Qué es CodeWinOptimizer y qué hace?",
+        a: "CodeWinOptimizer es un optimizador y debloater de Windows gratuito y de código abierto para Windows 10 y 11. Desde un único .exe portátil puedes instalar o desinstalar 181 apps vía WinGet o Chocolatey, aplicar más de 140 ajustes de registro, privacidad y rendimiento, activar o desactivar características de Windows, gestionar programas de inicio, limpiar archivos basura, monitorizar tu PC con una puntuación de salud, y crear puntos de restauración antes de cualquier cambio.",
+      },
+      {
+        q: "¿Es CodeWinOptimizer una alternativa a WinUtil?",
+        a: "Sí. CodeWinOptimizer cubre los mismos casos de uso que WinUtil — instalar apps, aplicar ajustes de Windows, quitar bloatware, reparar Windows y gestionar actualizaciones — pero como aplicación de Windows portátil con una GUI moderna en lugar de un script de PowerShell. Añade extras que WinUtil no incluye, como un gestor de inicio reversible, un monitor del sistema con salud del PC (0-100), limpieza de disco y backup de drivers.",
+      },
+      {
+        q: "¿Es CodeWinOptimizer gratis y de código abierto?",
+        a: "Sí. CodeWinOptimizer es 100% gratis y open source en GitHub. No hay suscripciones, ni límites de prueba, ni cuentas, ni funciones 'pro' de pago. Todo lo que hace el optimizador es visible en el código y se ejecuta íntegramente en tu máquina.",
+      },
+      {
+        q: "¿Es seguro? ¿CodeWinOptimizer contiene telemetría o anuncios?",
+        a: "CodeWinOptimizer es local-first: no contiene telemetría, ni analíticas, ni anuncios, y nunca se conecta a ningún servidor. Cada ajuste muestra el comando exacto de PowerShell o del registro antes de aplicarlo, los cambios son reversibles, y la app recomienda crear un punto de restauración y un backup completo del registro (5 hives) primero.",
+      },
+      {
+        q: "¿CodeWinOptimizer acelera Windows o mejora el rendimiento en juegos?",
+        a: "Ataca justo lo que ralentiza Windows: bloatware y apps preinstaladas, telemetría y servicios en segundo plano, programas de inicio y latencia de red (Nagle, temporizadores de latencia, TCP/IP). Perfiles como el de Gaming desactivan funciones que consumen recursos y priorizan el rendimiento en primer plano. Los resultados dependen del hardware, pero la mayoría de usuarios nota arranques más rápidos y menor uso de CPU, RAM y disco en segundo plano.",
+      },
+      {
+        q: "¿Qué versiones de Windows son compatibles?",
+        a: "Windows 10 y Windows 11 (64 bits) con el runtime WebView2. La herramienta no necesita instalación: descarga el .exe desde GitHub Releases, ejecútalo como Administrador, crea un punto de restauración y podrás usarlo desde una USB en cualquier máquina.",
+      },
+    ],
+  },
   footer: {
     website: "OscarDev",
   },
