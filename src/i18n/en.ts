@@ -15,7 +15,8 @@ const en = {
       "A local-first Windows optimization tool that puts you in charge. System restore, app management, registry tweaks, performance tuning — all from a single, portable executable.",
     download: "Download for Windows",
     viewOnGitHub: "View on GitHub",
-    subtitle: "Windows 10/11 · Single .exe with bundled O&O ShutUp10++ · No installation required · Auto-elevates to Administrator",
+    subtitle:
+      "Windows 10/11 · Single .exe with bundled O&O ShutUp10++ · No installation required · Auto-elevates to Administrator",
     install: {
       label: "Install in one line (PowerShell admin)",
       copy: "Copy",
@@ -78,12 +79,22 @@ const en = {
     heading1: "See it",
     heading2: "in action.",
     subheading: "A dark-themed, modern interface designed for power users.",
-    labels: ["Restore", "Apps", "Tweaks", "Features", "Monitor", "Cleanup", "Updates", "Settings", "Startup"],
+    labels: [
+      "Restore",
+      "Apps",
+      "Tweaks",
+      "Features",
+      "Monitor",
+      "Cleanup",
+      "Updates",
+      "Settings",
+      "Startup",
+    ],
   },
   discord: {
-    heading: "Join KiriHub on Discord",
+    heading: "Join OscarHub on Discord",
     subheading: "Get help, share feedback, and stay up to date.",
-    button: "Join KiriHub",
+    button: "Join OscarHub",
   },
   tech: {
     heading1: "Built with",
@@ -93,8 +104,14 @@ const en = {
       { label: "Frontend", value: "Vanilla JS, CSS (dark theme)" },
       { label: "Window", value: "WebView2 (Edge Chromium)" },
       { label: "Package Managers", value: "WinGet, Chocolatey" },
-      { label: "System Tools", value: "PowerShell, DISM, bcdedit, reg.exe, nvidia-smi" },
-      { label: "Monitoring", value: "gopsutil (CPU/RAM), nvidia-smi (GPU), WMI" },
+      {
+        label: "System Tools",
+        value: "PowerShell, DISM, bcdedit, reg.exe, nvidia-smi",
+      },
+      {
+        label: "Monitoring",
+        value: "gopsutil (CPU/RAM), nvidia-smi (GPU), WMI",
+      },
     ],
     howToHeading1: "How to",
     howToHeading2: "run.",
@@ -105,9 +122,9 @@ const en = {
       "(Recommended) Create a restore point first",
       "Use any tab: install apps, apply tweaks, run fixes",
     ],
-    prerequisites:
-      "Prerequisites:",
-    prerequisitesText: " Go 1.20+, Wails v2, Windows 10/11 with WebView2 runtime.",
+    prerequisites: "Prerequisites:",
+    prerequisitesText:
+      " Go 1.20+, Wails v2, Windows 10/11 with WebView2 runtime.",
     antivirusNotice: "Antivirus notice:",
     antivirusText:
       " This tool uses PowerShell, DISM, WMI, and registry commands. Some antivirus may flag the .exe as suspicious. All code is open source — ",
@@ -128,7 +145,7 @@ const en = {
       },
       {
         q: "Is CodeWinOptimizer free and open source?",
-        a: "Yes. CodeWinOptimizer is 100% free and open source on GitHub. There are no subscriptions, no trial limits, no accounts and no paid \"pro\" features. Everything the optimizer does is visible in the code, and it runs entirely on your machine.",
+        a: 'Yes. CodeWinOptimizer is 100% free and open source on GitHub. There are no subscriptions, no trial limits, no accounts and no paid "pro" features. Everything the optimizer does is visible in the code, and it runs entirely on your machine.',
       },
       {
         q: "Is it safe? Does CodeWinOptimizer contain telemetry or ads?",

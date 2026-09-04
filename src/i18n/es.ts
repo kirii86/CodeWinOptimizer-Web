@@ -15,7 +15,8 @@ const es = {
       "Una herramienta de optimización local-first que te da el control. Restauración del sistema, gestión de apps, ajustes del registro, tuning de rendimiento — todo desde un único ejecutable portable.",
     download: "Descargar para Windows",
     viewOnGitHub: "Ver en GitHub",
-    subtitle: "Windows 10/11 · Un solo .exe con O&O ShutUp10++ embebido · Sin instalación · Auto-elevación a Administrador",
+    subtitle:
+      "Windows 10/11 · Un solo .exe con O&O ShutUp10++ embebido · Sin instalación · Auto-elevación a Administrador",
     install: {
       label: "Instala en una línea (PowerShell admin)",
       copy: "Copiar",
@@ -77,13 +78,24 @@ const es = {
   preview: {
     heading1: "Míralo",
     heading2: "en acción.",
-    subheading: "Una interfaz moderna con tema oscuro diseñada para power users.",
-    labels: ["Restauración", "Apps", "Ajustes", "Características", "Monitor", "Limpieza", "Actualizaciones", "Configuración", "Inicio"],
+    subheading:
+      "Una interfaz moderna con tema oscuro diseñada para power users.",
+    labels: [
+      "Restauración",
+      "Apps",
+      "Ajustes",
+      "Características",
+      "Monitor",
+      "Limpieza",
+      "Actualizaciones",
+      "Configuración",
+      "Inicio",
+    ],
   },
   discord: {
-    heading: "Únete a KiriHub en Discord",
+    heading: "Únete a OscarHub en Discord",
     subheading: "Recibe ayuda, comparte feedback y mantente al día.",
-    button: "Unirse a KiriHub",
+    button: "Unirse a OscarHub",
   },
   tech: {
     heading1: "Construido con",
@@ -97,7 +109,10 @@ const es = {
         label: "Herramientas del sistema",
         value: "PowerShell, DISM, bcdedit, reg.exe, nvidia-smi",
       },
-      { label: "Monitorización", value: "gopsutil (CPU/RAM), nvidia-smi (GPU), WMI" },
+      {
+        label: "Monitorización",
+        value: "gopsutil (CPU/RAM), nvidia-smi (GPU), WMI",
+      },
     ],
     howToHeading1: "Cómo",
     howToHeading2: "ejecutarlo.",
@@ -108,9 +123,9 @@ const es = {
       "(Recomendado) Crea un punto de restauración primero",
       "Usa cualquier pestaña: instala apps, aplica ajustes, ejecuta correcciones",
     ],
-    prerequisites:
-      "Requisitos:",
-    prerequisitesText: " Go 1.20+, Wails v2, Windows 10/11 con WebView2 runtime.",
+    prerequisites: "Requisitos:",
+    prerequisitesText:
+      " Go 1.20+, Wails v2, Windows 10/11 con WebView2 runtime.",
     antivirusNotice: "Aviso antivirus:",
     antivirusText:
       " Esta herramienta usa PowerShell, DISM, WMI y comandos del registro. Algunos antivirus pueden marcar el .exe como sospechoso. Todo el código es open source — ",
